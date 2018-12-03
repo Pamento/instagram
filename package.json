@@ -4,7 +4,13 @@
   "description": "simply application web",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "nodemon index.js",
+    "heroku-postbuild": "npm run build",
+    "start:dev": "concurrently 'react-scripts start' 'nodemon index.js'",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+
   },
   "repository": {
     "type": "git",
