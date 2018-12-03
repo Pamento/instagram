@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo 'Error: no test specified' && exit 1",
-    "start":"nodemon indes.js",
-    "mysql-start":"sudo docker-compose up",
-    "mysql-stop":"sudo docker-compose down",
-    "mysql-connect":"sudo docker-compose exec db mysql -u admin -p",
-    "bash":"sudo docker-compose exec db bash"
+    "start": "nodemon indes.js",
+    "mysql-start": "sudo docker-compose up",
+    "mysql-stop": "sudo docker-compose down",
+    "mysql-connect": "sudo docker-compose exec db mysql -u admin -p",
+    "bash": "sudo docker-compose exec db bash",
+    "migrate": "sequelize db:migrate",
+    "migrate:undo": "sequelize db:migrate:undo:all"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,8 @@
   },
   "homepage": "https://github.com/Pamento/instagram#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.41.2"
   }
 }
