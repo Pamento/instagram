@@ -1,0 +1,22 @@
+{
+  "name": "instagram",
+  "version": "1.0.0",
+  "description": "simply application web",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pamento/instagram.git"
+  },
+  "author": "pawel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pamento/instagram/issues"
+  },
+  "homepage": "https://github.com/Pamento/instagram#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
